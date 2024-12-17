@@ -1,0 +1,51 @@
+Introduction::Welcome
+{
+object-oriented languages are designed for solving large, complex problems
+object-oriented programming focuses on the objects in a problem domain
+C++ is a hybrid language that can focus on activities as well as objects
+C++ provides improved type safety relative to C
+cout is the library object that represents the standard output device
+cin is the library object that represents the standard input device
+<< is the operator that inserts data into the object on its left-side operand
+>> is the operator that extracts data from the object on its left-side operand
+}
+
+Introduction::Object Terminology
+{
+An object is a chunk of information with a crisp conceptual boundary and a well-defined structure.
+Objects are abstractions of the most important chunks of information from a problem domain. They distinguish the different feature sets in the problem domain.
+A class describes the structure common to a set of similar objects. Each object in the set is a single instance of its class.
+Encapsulation hides the implementation details within a class - the internal data and internal logic are invisible to client applications that use objects of that class.
+We can upgrade the structure of a well-encapsulated class without altering any client code.
+The cornerstones of object-oriented programming are encapsulation, inheritance and polymorphism.
+}
+
+
+Introduction::Modular Programming 
+{
+a module consists of a header file and an implementation file
+a module's header file declares the names that are exposed to client modules
+a module's implementation file defines the module's logic
+a module's implementation file needs the header files of those modules that define classes or functions used in the implementation file
+the three stages of creating an executable are preprocessing, compiling, and linking
+it is good practice to write the suite of unit tests for each module of an application before coding the module's implementation
+}
+
+
+Foundations::Types and Overloading References 
+{
+a bool type can only hold a true value or a false value
+C++ requires the struct or class keyword only in the definition of the class itself
+a declaration associates an identifier with a type
+a definition attaches meaning to an identifier and is an executable statement
+a definition is a declaration, but a declaration is not necessarily a definition
+the scope of a declaration is that part of the program throughout which the declaration is visible
+we overload a function by changing its signature
+a function's signature consists of its identifier, its parameter types, and the order of its parameter types
+a C++ function prototype must include all of the parameter types and the return type
+the & operator on a parameter type instructs the compiler to pass by reference
+pass by reference syntax simplifies the pass by address syntax in most cases
+an array of pointers is a data structure that provides an efficient way for iterating through a set of objects based on their current type
+}
+
+Foundations::Dynamic Memory
