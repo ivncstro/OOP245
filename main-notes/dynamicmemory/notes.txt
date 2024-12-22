@@ -1,0 +1,18 @@
+How to Avoid Memory Leaks
+----------------------------------------------------------------------------------------------------------
+Always free allocated memory using delete or delete[] when you're done.
+Set pointers to nullptr after deallocating memory to avoid dangling pointers.
+Use smart pointers (e.g., std::unique_ptr, std::shared_ptr) in modern C++ for automatic memory management.
+Run tools like Valgrind to check for memory leaks.
+
+
+Summary
+----------------------------------------------------------------------------------------------------
+The memory available to an application at run-time consists of static memory and dynamic memory
+Static memory lasts the lifetime of the application
+The linker determines the amount of static memory used by the application
+The operating system provides dynamic memory to an application at run-time upon request
+The keyword new[] allocates a contiguous region of dynamic memory and returns its starting address
+We store the address of dynamically allocated memory in static memory
+delete[] deallocates contiguous memory starting at the specified address
+Allocated memory must be deallocated within the scope of the pointer that holds its address
