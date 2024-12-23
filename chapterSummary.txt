@@ -49,3 +49,14 @@ an array of pointers is a data structure that provides an efficient way for iter
 }
 
 Foundations::Dynamic Memory
+{
+The memory available to an application at run-time consists of static memory and dynamic memory
+Static memory lasts the lifetime of the application
+The linker determines the amount of static memory used by the application
+The operating system provides dynamic memory to an application at run-time upon request
+The keyword new[] allocates a contiguous region of dynamic memory and returns its starting address
+We store the address of dynamically allocated memory in static memory
+delete[] deallocates contiguous memory starting at the specified address
+Allocated memory must be deallocated within the scope of the pointer that holds its address
+
+}
