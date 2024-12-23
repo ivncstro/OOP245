@@ -16,9 +16,11 @@ public:
 
     ~Student() {
         delete[] _studentNum; //deallocate values for student num
+        _studentNum = nullptr;
         delete[] _grades; // deallocate values for grades
+        _grades = nullptr;
 
-        std::cout << "Array deallocated and deleted." << std::endl;
+        std::cout << "Array deallocated and deleted." << std::endl; //for my debug, explicitly show deallocation
     }
 
     void setVal(int index, int studentNum, int grade) {
