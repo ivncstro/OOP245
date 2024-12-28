@@ -9,7 +9,7 @@ cin is the library object that represents the standard input device
 << is the operator that inserts data into the object on its left-side operand
 >> is the operator that extracts data from the object on its left-side operand
 }
-
+-----------------------------------------------------------------------------------------------------------------------------------------------
 Introduction::Object Terminology
 {
 An object is a chunk of information with a crisp conceptual boundary and a well-defined structure.
@@ -19,8 +19,7 @@ Encapsulation hides the implementation details within a class - the internal dat
 We can upgrade the structure of a well-encapsulated class without altering any client code.
 The cornerstones of object-oriented programming are encapsulation, inheritance and polymorphism.
 }
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------
 Introduction::Modular Programming 
 {
 a module consists of a header file and an implementation file
@@ -30,8 +29,7 @@ a module's implementation file needs the header files of those modules that defi
 the three stages of creating an executable are preprocessing, compiling, and linking
 it is good practice to write the suite of unit tests for each module of an application before coding the module's implementation
 }
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------
 Foundations::Types and Overloading References 
 {
 a bool type can only hold a true value or a false value
@@ -47,7 +45,7 @@ the & operator on a parameter type instructs the compiler to pass by reference
 pass by reference syntax simplifies the pass by address syntax in most cases
 an array of pointers is a data structure that provides an efficient way for iterating through a set of objects based on their current type
 }
-
+-----------------------------------------------------------------------------------------------------------------------------------------------
 Foundations::Dynamic Memory
 {
 The memory available to an application at run-time consists of static memory and dynamic memory
@@ -58,5 +56,33 @@ The keyword new[] allocates a contiguous region of dynamic memory and returns it
 We store the address of dynamically allocated memory in static memory
 delete[] deallocates contiguous memory starting at the specified address
 Allocated memory must be deallocated within the scope of the pointer that holds its address
-
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Member Functions and Privacy
+{
+Object-oriented classes may contain both data members and member functions
+The keyword private identifies subsequent members as inaccessible to any client
+The keyword public identifies subsequent members as accessible to any client
+Data members hold the information about an object's state
+Member functions describe the logic that an object performs on its data members
+A query reports the state of an object without changing its state
+A modifier changes the state of an object
+An empty state is the set of data values that identifies the absence of valid data in an object
+A field width setting only holds for the next field
+All settings other than a field width setting persist until changed
+Precision has different meanings under general, scientific, and fixed formats
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Constructors and Destructors
+{
+We refer to the data members of an object as its instance variables
+Privacy operates at the class level, not at the object level
+The constructor is a special member function that an object invokes at creation time
+The name of the constructor is the name of the class
+The destructor is a special member function that an object invokes at destruction time
+The name of the destructor is the name of the class prefixed by a ~
+The constructor and destructor do not have return types
+The compiler inserts an empty body constructor/destructor into any class definition that does not declare a constructor/destructor
+The compiler does not insert an empty-body, no-argument constructor into a class definition that declares any form of constructor
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
