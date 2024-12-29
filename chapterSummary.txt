@@ -86,3 +86,12 @@ The compiler inserts an empty body constructor/destructor into any class definit
 The compiler does not insert an empty-body, no-argument constructor into a class definition that declares any form of constructor
 }
 -----------------------------------------------------------------------------------------------------------------------------------------------
+The Current Object - this and *this
+{
+The current object is the current host object for the member function a member function's parameters consist of implicit and explicit parameters
+A member function's explicit parameters receive information from the client code
+A member function's implicit parameters bind the function to the instance variables of current object
+The keyword this holds the address of the current object
+*this refers to the current object itself
+The keyword this is meaningless outside a member function
+}
