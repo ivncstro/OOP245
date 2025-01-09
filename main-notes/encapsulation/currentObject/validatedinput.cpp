@@ -13,7 +13,6 @@
 // - Leaves the current object unchanged if the temporary object is empty
 
 // To avoid duplicating validation logic, we:
-
 // - Construct a local Student object passing the input data to the three-argument constructor
 // - Let the internal logic determine whether to accept the data or place the object in a safe empty state
 // - Assign the local object to the current object if the temporary object accepted the data
