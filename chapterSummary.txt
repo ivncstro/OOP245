@@ -95,3 +95,24 @@ The keyword this holds the address of the current object
 *this refers to the current object itself
 The keyword this is meaningless outside a member function
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Member Operators
+{
+C++ allows overloading of most of the operators for operands of class type
+We cannot define new operators or redefine operations on the fundamental types
+The keyword operator followed by a symbol identifies an operation
+The left operand in an overloaded member operator is the current object
+We use member operators to overload operations that modify the left operand
+The int keyword in the signature for increment/decrement operator identifies the post-fix operation distinguishing it from the pre-fix operation
+We use temporary objects to localize logic, which improves maintainability
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Classes and Operators
+{
+    two special member functions manage allocations and deallocations associated with deep copying and assigning:
+        - the copy constructor
+        - the copy assignment operator
+    
+}
+
+Code Quiz 1 (not marked) - 502811
