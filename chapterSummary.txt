@@ -107,12 +107,14 @@ The int keyword in the signature for increment/decrement operator identifies the
 We use temporary objects to localize logic, which improves maintainability
 }
 -----------------------------------------------------------------------------------------------------------------------------------------------
-Classes and Operators
+Classes and Resources (check text.edit)
 {
-    two special member functions manage allocations and deallocations associated with deep copying and assigning:
-        - the copy constructor
-        - the copy assignment operator
-    
+A class with resources requires custom definitions of a copy constructor, copy assignment operator and destructor
+The copy constructor copies data from an existing object to a newly created object
+The copy assignment operator copies data from an existing object to an existing object
+Initialization, pass by value, and return by value client code invokes the copy constructor
+The copy constructor and copy assignment operator should shallow copy only the non-resource instance variables
+The copy assignment operator should check for self-assignment
 }
 
 Code Quiz 1 (not marked) - 502811
