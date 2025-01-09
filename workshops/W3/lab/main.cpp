@@ -71,7 +71,7 @@ void listCCs() {
    short expYear{};
    int numRead{};
    unsigned int row{};
-   FILE* ccfile = fopen("/Users/ban/Winter 2025/OOP/Learning/workshops/WS03/lab/cc.csv", "r"); // change file location depending on directory
+   FILE* ccfile = fopen("cc.csv", "r"); // change file location depending on directory
    // if (!ccfile) {
    //    cerr << "Error opening File!" << endl;
    // }
